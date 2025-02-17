@@ -3,5 +3,6 @@ package main
 import "fmt"
 
 func main{
-	fmt.println("vim-go")
+	fmt.Println("vim-go")
 }
+
