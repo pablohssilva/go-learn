@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"log"
-	"github.com/pablohssilva/go-learn"
 	"github.com/joho/godotenv"
 )
 
