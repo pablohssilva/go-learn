@@ -12,9 +12,7 @@ func main(){
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
-	routes.InitRoutes()
-
-
+	
 	//router := gin.New() A diferença do new é que ele não instancia nenhun handler e nenhum middleware!
 	router := gin.Default()
 
