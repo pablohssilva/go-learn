@@ -1,6 +1,8 @@
 package controller
 
-func FindUserById(c *gin.Context){
+import "github.com/gin-gonic/gin"
+
+func FindUserByID(c *gin.Context){
 
 }
 

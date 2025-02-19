@@ -1,6 +1,7 @@
 package routes
 
 import (
+
 	"github.com/gin-gonic/gin"
 	"github.com/pablohssilva/go-learn/src/controller" 
 
@@ -8,7 +9,7 @@ import (
 
 func InitRoutes(r *gin.RouterGroup){
 
-	r.GET("/getUserById/:userId", controller.FindUserById)
+	r.GET("/getUserById/:userId", controller.FindUserByID)
 	r.GET("/getUserByEmail/:userEmail", controller.FindUserByEmail)
 	r.POST("/createUser", controller.CreateUser)
 	r.PUT("/updateUser/:userId", controller.UpdateUser)
