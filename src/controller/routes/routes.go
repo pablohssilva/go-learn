@@ -1,6 +1,10 @@
 package routes
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"github.com/pablohssilva/go-learn/src/controller" 
+
+)
 
 func InitRoutes(r *gin.RouterGroup){
 
