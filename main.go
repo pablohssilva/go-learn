@@ -3,7 +3,7 @@ package main
 import (
 	
 	"log"
-	"github.com/pablohssilva/go-learn"
+	"github.com/pablohssilva/go-learn/src/controller/routes"
 	"github.com/joho/godotenv"
 	"github.com/gin-gonic/gin"
 )
