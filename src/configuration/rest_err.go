@@ -1,15 +1,17 @@
 package rest_err
 
+import "net/http"
+
 type RestErr struct {
-	Message string  `json:"message"`
-	Err string 		`json:"error"`
-	Code int  	`json:"code"`
-	Causes []Causes `json:"causes"`
+	Message string   `json:"message"`
+	Err     string   `json:"error"`
+	Code    int      `json:"code"`
+	Causes  []Causes `json:"causes"`
 }
 
-tupe Causes struct {
-	Field string 	`json:"field"`
-	Message string 	`json:"message"`
+type Causes struct {
+	Field   string `json:"field"`
+	Message string `json:"message"`
 }
 
 func NewRestErr(message, err string, code int, causes []Causes) *RestErr {
@@ -62,6 +64,6 @@ func NewForbiddenError(message string) *RestErr {
 	}
 }
 
-func (r *RestErr) Error() string{
+func (r *RestErr) Error() string {
 	return r.Message
 }
