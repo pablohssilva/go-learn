@@ -2,7 +2,6 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/pablohssilva/go-learn/src/configuration/rest_err"
 )
 
 func CreateUser(c *gin.Context) {
